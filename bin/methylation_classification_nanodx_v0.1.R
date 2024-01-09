@@ -1,6 +1,6 @@
 #Check and install packages
 if (!require("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
+  install.packages("BiocManager", repos = "https://cloud.r-project.org")
 
 for (package in c('optparse', 'GenomicRanges','ranger','matrixStats','data.table', 'glmnet' )) {
   if (!require(package, character.only=T, quietly=T)) {
