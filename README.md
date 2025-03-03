@@ -1,5 +1,9 @@
 ### Nextflow wf-human-variation and rapidCNS2 combined workflow
 
+This repo has now been archived. Please use the updated (and renamed) version of this pipeline: https://github.com/graemefox/SCARLET
+
+
+
 It takes an aligned bam of ONT data along with the .bai index and runs epi2me-labs wf-human-variation to generate SNP, SV, and CNV variants and also aggregate methylation data (the --snp, --sv, --cnv, and --methyl options).
 
 Outputs from wf-human-variation are then analysed using Rapid-CNS2 to generate the final report. They are also optionally analysed using the Sturgeon classifier (see optional extra parameters below).
